@@ -34,7 +34,7 @@ function App() {
               <p>r/javascript</p>
               <div>Here it goes the heatmap preview</div>
             </Route>
-            <Route path="HowItWorks">
+            <Route path="/how_it_works">
               <div id="how-it-works">
                 <h2>How it works</h2>
                 <ul>
