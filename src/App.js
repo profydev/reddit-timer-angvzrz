@@ -66,6 +66,7 @@ function App() {
                 </p>
               </div>
             </Route>
+            <Route>404 - Not Found</Route>
           </div>
         </Switch>
         <div id="footer">
