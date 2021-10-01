@@ -12,22 +12,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <div>
-          <div id="header">
-            <div id="corner-logo-container">
-              <img
-                id="corner-logo"
-                src="https://toppng.com/uploads/preview/
-                      reddit-icon-reddit-logo-transparent-115628752708pqmsy4kgm.png"
-                alt="take me home"
-                width="150"
-              />
-            </div>
-            <div id="navigation">
-              <button type="button">Search</button>
-              <button type="button">How it works</button>
-              <button type="button">About</button>
-            </div>
-          </div>
           <GlobalStyle />
           <Header />
           <Switch>
