@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './globalStyles';
+import Header from './pages/Header';
 import theme from './theme';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             </div>
           </div>
           <GlobalStyle />
+          <Header />
           <Switch>
             <div id="content">
               <Route exact path="/">
