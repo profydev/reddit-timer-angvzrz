@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationItem from './NavigationItem';
+import NavigationItem from '../NavigationItem/NavigationItem';
 
 function NavigationItems() {
   return (
