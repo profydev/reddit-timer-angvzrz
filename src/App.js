@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './globalStyles';
-import Header from './pages/Header';
+import Header from './pages/Header/Header';
 import theme from './theme';
 
 function App() {
