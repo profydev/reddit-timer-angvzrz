@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-const Styling = styled.header`
+const Styling = styled.div`
   position: absolute;
-  width: 100%;
-  height: 100px;
-  display: flex;
+  left: 5.56%;
+  right: 84.03%;
+  top: 32%;
+  bottom: 32%;
 `;
 
 export default Styling;

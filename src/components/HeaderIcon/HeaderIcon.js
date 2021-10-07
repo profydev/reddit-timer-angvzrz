@@ -1,12 +1,13 @@
 import React from 'react';
 
-import headerLogo from '../assets/header_logo.png';
+import headerLogo from '../../assets/header_logo.png';
+import Styling from './HeaderIconStyles';
 
 function HeaderIcon() {
   return (
-    <div>
+    <Styling>
       <img src={headerLogo} alt="lets go home" width={150} />
-    </div>
+    </Styling>
   );
 }
 

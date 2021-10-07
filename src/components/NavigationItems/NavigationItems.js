@@ -1,13 +1,14 @@
 import React from 'react';
 import NavigationItem from '../NavigationItem/NavigationItem';
+import Styling from './NavigationItemsStyles';
 
 function NavigationItems() {
   return (
-    <div>
-      <NavigationItem>Search</NavigationItem>
-      <NavigationItem>How it works</NavigationItem>
-      <NavigationItem>About</NavigationItem>
-    </div>
+    <Styling>
+      <NavigationItem innerHtml="Search" />
+      <NavigationItem innerHtml="How it works" />
+      <NavigationItem innerHtml="About" />
+    </Styling>
   );
 }
 
