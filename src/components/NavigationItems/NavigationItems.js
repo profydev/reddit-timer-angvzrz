@@ -5,9 +5,9 @@ import Styling from './NavigationItemsStyles';
 function NavigationItems() {
   return (
     <Styling>
-      <NavigationItem innerHtml="Search" />
-      <NavigationItem innerHtml="How it works" />
-      <NavigationItem innerHtml="About" />
+      <NavigationItem goToPage="/search" innerHtml="Search" />
+      <NavigationItem goToPage="/how_it_works" innerHtml="How it works" />
+      <NavigationItem goToPage="/about" innerHtml="About" />
     </Styling>
   );
 }

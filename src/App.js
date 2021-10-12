@@ -19,7 +19,7 @@ function App() {
           <Header />
           <Switch>
             <div id="content">
-              <Route exact path="/">
+              <Route exact path="/search">
                 <Search />
               </Route>
               <Route path="/how_it_works">

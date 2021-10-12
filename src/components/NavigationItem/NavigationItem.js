@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import Styling from './NavigationItemStyles';
 
 function NavigationItem({ goToPage, innerHtml }) {
   return (
     <Styling>
-      <a href={goToPage}>{innerHtml}</a>
+      <Link to={goToPage}>{innerHtml}</Link>
     </Styling>
   );
 }
