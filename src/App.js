@@ -1,6 +1,7 @@
 import React from 'react';
-
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  HashRouter, Route, Switch,
+} from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './globalStyles';
@@ -13,13 +14,13 @@ import theme from './theme';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <HashRouter hashType="noslash">
         <div>
           <GlobalStyle />
           <Header />
           <Switch>
             <div id="content">
-              <Route exact path="/search">
+              <Route path="/search">
                 <Search />
               </Route>
               <Route path="/how_it_works">
@@ -37,7 +38,7 @@ function App() {
             <a href="https://profy.dev/legal">Terms & Privacy</a>
           </div>
         </div>
-      </Router>
+      </HashRouter>
     </ThemeProvider>
   );
 }
