@@ -15,10 +15,10 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <HashRouter hashType="noslash">
-        <div>
-          <GlobalStyle />
-          <Header />
-          <Switch>
+        <Switch>
+          <Route path="/">
+            <GlobalStyle />
+            <Header />
             <div id="content">
               <Route path="/search">
                 <Search />
@@ -31,13 +31,13 @@ function App() {
               </Route>
               <Route>404 - Not Found</Route>
             </div>
-          </Switch>
-          <div id="footer">
-            <a href="https://profy.dev/">profy.dev</a>
-            <div>search icon here</div>
-            <a href="https://profy.dev/legal">Terms & Privacy</a>
-          </div>
-        </div>
+            <div id="footer">
+              <a href="https://profy.dev/">profy.dev</a>
+              <div>search icon here</div>
+              <a href="https://profy.dev/legal">Terms & Privacy</a>
+            </div>
+          </Route>
+        </Switch>
       </HashRouter>
     </ThemeProvider>
   );
