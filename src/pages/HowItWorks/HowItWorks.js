@@ -1,8 +1,9 @@
 import React from 'react';
+import Styling from './HowItWorksStyles';
 
 function HowItWorks() {
   return (
-    <div id="how-it-works">
+    <Styling id="how-it-works">
       <h2>How it works</h2>
       <ul>
         <li>We find the 500 top posts from the past year for a subrredit</li>
@@ -11,7 +12,7 @@ function HowItWorks() {
         </li>
         <li>See immediately when to submit your reddit post</li>
       </ul>
-    </div>
+    </Styling>
   );
 }
 
