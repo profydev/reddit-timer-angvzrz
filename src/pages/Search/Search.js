@@ -1,8 +1,9 @@
 import React from 'react';
+import Styling from './SearchStyles';
 
 function Search() {
   return (
-    <div>
+    <Styling>
       <p>No reactions to your reddit posts?</p>
       <p>
         Great timing, great results! Find the best time to post on your
@@ -10,8 +11,7 @@ function Search() {
       </p>
       <button type="button">SHOW ME THE BEST TIME</button>
       <p>r/javascript</p>
-      <div>Here it goes the heatmap preview</div>
-    </div>
+    </Styling>
   );
 }
 
