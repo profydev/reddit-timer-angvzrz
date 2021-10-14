@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Search() {
+function Table() {
   return (
     <div>
       <div>Here it goes the heatmap preview</div>
@@ -8,4 +8,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default Table;

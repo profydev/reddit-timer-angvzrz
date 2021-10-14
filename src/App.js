@@ -9,6 +9,7 @@ import About from './pages/About/About';
 import Header from './pages/Header/Header';
 import HowItWorks from './pages/HowItWorks/HowItWorks';
 import Search from './pages/Search/Search';
+import Table from './pages/Table/Table';
 import theme from './theme';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Route path="/search">
                 <Search />
               </Route>
+              <Table />
               <Route path="/how_it_works">
                 <HowItWorks />
               </Route>
