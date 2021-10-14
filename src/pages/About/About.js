@@ -1,8 +1,9 @@
 import React from 'react';
+import Styling from './AboutStyles';
 
 function About() {
   return (
-    <div id="about">
+    <Styling>
       <h2>About</h2>
       <p>
         This app was created during a course on
@@ -19,7 +20,7 @@ function About() {
         </a>
         .
       </p>
-    </div>
+    </Styling>
   );
 }
 
