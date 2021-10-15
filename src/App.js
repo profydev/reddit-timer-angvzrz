@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './globalStyles';
 import About from './pages/About/About';
+import Footer from './pages/Footer/Footer';
 import Header from './pages/Header/Header';
 import HowItWorks from './pages/HowItWorks/HowItWorks';
 import Search from './pages/Search/Search';
@@ -33,14 +34,10 @@ function App() {
               </Route>
               <Route>404 - Not Found</Route>
             </div>
-            <div id="footer">
-              <a href="https://profy.dev/">profy.dev</a>
-              <div>search icon here</div>
-              <a href="https://profy.dev/legal">Terms & Privacy</a>
-            </div>
           </Route>
         </Switch>
       </HashRouter>
+      <Footer />
     </ThemeProvider>
   );
 }
