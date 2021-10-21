@@ -1,11 +1,12 @@
 import React from 'react';
+import FooterIcon from '../../components/FooterIcon/FooterIcon';
 import Styling from './FooterStyles';
 
 function Footer() {
   return (
     <Styling>
       <a href="https://profy.dev/">profy.dev</a>
-      <div>search icon here</div>
+      <FooterIcon />
       <a href="https://profy.dev/legal">Terms & Privacy</a>
     </Styling>
   );
