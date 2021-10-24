@@ -35,8 +35,8 @@ function App() {
               </Route>
               {/* <Route>404 - Not Found</Route> */}
             </Content>
+            <Footer />
           </Route>
-          <Footer />
         </Switch>
       </HashRouter>
     </ThemeProvider>
