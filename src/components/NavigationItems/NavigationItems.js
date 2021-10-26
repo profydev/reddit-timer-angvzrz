@@ -1,15 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import NavigationItem from '../NavigationItem/NavigationItem';
 import Styling from './NavigationItemsStyles';
 
-function NavigationItems() {
+function NavigationItems({ items }) {
   return (
     <Styling>
-      <NavigationItem goToPage="/search" innerHtml="Search" />
-      <NavigationItem goToPage="/how_it_works" innerHtml="How it works" />
-      <NavigationItem goToPage="/about" innerHtml="About" />
+      {
+        items.map(
+          (item) => <NavigationItem goToPage={item.link} innerHtml={item.text} />,
+        )
+      }
     </Styling>
   );
 }
+
+NavigationItems.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default NavigationItems;

@@ -8,7 +8,21 @@ function Header() {
   return (
     <Styling>
       <HeaderIcon />
-      <NavigationItems />
+      <NavigationItems items={[
+        {
+          link: '/search',
+          text: 'Search',
+        },
+        {
+          link: '/how_it_works',
+          text: 'How it works',
+        },
+        {
+          link: '/about',
+          text: 'About',
+        },
+      ]}
+      />
     </Styling>
   );
 }
