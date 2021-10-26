@@ -5,7 +5,7 @@ import Styling from './FooterStyles';
 function Footer() {
   return (
     <Styling>
-      <a href="https://profy.dev/">profy.dev</a>
+      <a href="https://profy.dev/employers">profy.dev</a>
       <FooterIcon />
       <a href="https://profy.dev/legal">Terms & Privacy</a>
     </Styling>
