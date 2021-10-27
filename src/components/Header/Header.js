@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HeaderIcon from '../../components/HeaderIcon/HeaderIcon';
-import NavigationItems from '../../components/NavigationItems/NavigationItems';
+import HeaderIcon from '../HeaderIcon/HeaderIcon';
+import NavigationItems from '../NavigationItems/NavigationItems';
 import Styling from './HeaderStyles';
 
 function Header() {

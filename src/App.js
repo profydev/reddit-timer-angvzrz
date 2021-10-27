@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './globalStyles';
 import About from './pages/About/About';
-import Header from './pages/Header/Header';
+import Header from './components/Header/Header';
 import HowItWorks from './pages/HowItWorks/HowItWorks';
 import Search from './pages/Search/Search';
 import Table from './pages/Table/Table';
