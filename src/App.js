@@ -1,42 +1,33 @@
 import React from 'react';
 import {
-  HashRouter, Route, Switch,
+  HashRouter, Switch,
 } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import Content from './components/Content/ContentStyles';
 
 import GlobalStyle from './globalStyles';
 import About from './pages/About/About';
-import Footer from './components/Footer/Footer';
-import Header from './pages/Header/Header';
 import HowItWorks from './pages/HowItWorks/HowItWorks';
 import Search from './pages/Search/Search';
 // import Table from './pages/Table/Table';
 import theme from './theme';
+import Layout from './layouts/Layout';
+import RouterWrapper from './RouterWrapper';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <HashRouter hashType="noslash">
         <Switch>
-          <Route path="/">
+          <Layout>
             <GlobalStyle />
-            <Header />
             <Content>
-              <Route path="/search">
-                <Search />
-              </Route>
-              {/* <Table /> */}
-              <Route path="/how_it_works">
-                <HowItWorks />
-              </Route>
-              <Route path="/about">
-                <About />
-              </Route>
-              {/* <Route>404 - Not Found</Route> */}
+              <RouterWrapper component={<Search />} path="/search" />
+              <RouterWrapper component={<HowItWorks />} path="/how_it_works" />
+              <RouterWrapper component={<About />} path="/about" />
+              {/* <RouterWrapper component={"404 - Not Found"} path="" /> */}
             </Content>
-            <Footer />
-          </Route>
+          </Layout>
         </Switch>
       </HashRouter>
     </ThemeProvider>
