@@ -15,7 +15,7 @@ import theme from './theme';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter hashType="noslash">
+      <BrowserRouter>
         <Switch>
           <Route path="/">
             <GlobalStyle />
