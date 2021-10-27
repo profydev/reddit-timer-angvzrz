@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  HashRouter, Route, Switch,
+  BrowserRouter, Route, Switch,
 } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
@@ -15,20 +15,20 @@ import theme from './theme';
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <HashRouter hashType="noslash">
+      <BrowserRouter hashType="noslash">
         <Switch>
           <Route path="/">
             <GlobalStyle />
             <Header />
             <div id="content">
-              <Route path="/search">
+              <Route path="/search/javascript">
                 <Search />
               </Route>
               <Table />
-              <Route path="/how_it_works">
+              <Route path="/#how-it-works">
                 <HowItWorks />
               </Route>
-              <Route path="/about">
+              <Route path="/#about">
                 <About />
               </Route>
               <Route>404 - Not Found</Route>
@@ -40,7 +40,7 @@ function App() {
             </div>
           </Route>
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
