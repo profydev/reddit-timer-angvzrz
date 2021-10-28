@@ -22,9 +22,9 @@ function App() {
           <Layout>
             <GlobalStyle />
             <Content>
-              <RouterWrapper component={<Search />} path="/search" />
-              <RouterWrapper component={<HowItWorks />} path="/how_it_works" />
-              <RouterWrapper component={<About />} path="/about" />
+              <RouterWrapper component={<Search />} path="/search/javascript" />
+              <RouterWrapper component={<HowItWorks />} path="/#how-it-works" />
+              <RouterWrapper component={<About />} path="/#about" />
               {/* <RouterWrapper component={"404 - Not Found"} path="" /> */}
             </Content>
           </Layout>

@@ -7,7 +7,7 @@ function Footer() {
     <Styling>
       <a href="https://profy.dev/employers">profy.dev</a>
       <FooterIcon />
-      <a href="https://profy.dev/legal">Terms & Privacy</a>
+      <a href="/terms">Terms & Privacy</a>
     </Styling>
   );
 }

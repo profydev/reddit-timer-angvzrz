@@ -10,15 +10,15 @@ function Header() {
       <HeaderIcon />
       <NavigationItems items={[
         {
-          link: '/search',
+          link: '/search/javascript',
           text: 'Search',
         },
         {
-          link: '/how_it_works',
+          link: '/#how-it-works',
           text: 'How it works',
         },
         {
-          link: '/about',
+          link: '/#about',
           text: 'About',
         },
       ]}
