@@ -50,6 +50,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    position: relative;
     font-family: ${(props) => props.theme.font.family.default};
     font-size: ${(props) => props.theme.font.size.default};
     line-height: ${(props) => props.theme.font.lineHeight.default};
